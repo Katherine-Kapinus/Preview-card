@@ -1,6 +1,103 @@
+@import 'nullstyle';
+
 body{
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
+    font-family: 'Figtree', sans-serif;
+    background-color: #F4D04E;
+    color: #111;
+    font-weight: 500;
+    line-height: 21px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+a{
+    color: hsl(228, 45%, 44%);
+}
+
+.wrapper {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    
+}
+.card {
+    background-color: aliceblue;
+    max-width: 384px;
+    border-radius: 20px;
+    border: #000000 1px solid;
+    box-shadow: 8px 8px 0 0#000;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin: 24px;
+    }
+
+
+		&__image {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 2px rgba(0, 0, 0, 0.15);
+            aspect-ratio: 42 / 25;
+		}
+
+		&__body {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+		}
+
+		&__button {
+            background-color: #F4D04E;
+            width: fit-content;
+            padding: 4px 12px;
+            border-radius: 4px;
+            & a{
+                color: #000000;
+                font-weight: 800;
+            }
+        }
+
+		&__title {
+            font-size: 24px;
+            font-weight: 800;
+            line-height: 36px;
+		}
+
+		&__text {
+            line-height: 24px;
+            font-size: 16px;
+            color: #6b6b6b;
+
+		}
+
+		&__author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+		}
+
+		&__author-image {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
+            border: #000 1px solid;
+            
+		}
+
+		&__author-name {
+            font-weight: 800;
+		}
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-bottom: 12px;
 }
